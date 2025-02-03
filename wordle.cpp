@@ -35,14 +35,13 @@ bool winGame(std::vector<int> secret, std::vector<int> guess) {
 
 int main()
 {
+    srand(time(0));
     
+    std::vector<int> secret_code = createSecret(4);
+    std::cout << "here is the secret code: ";
+    display(secret_code);
 
-    // Seeding the random number generator
-    // Uncomment the code when you are finished testing your program
-    // and want to have the program run for real
-    // srand(time(0));
-    
-    std::vector<int> secret_code = createSecret();
+    int rand
     std::vector<int> user_guess = {};
     std::vector<std::string> hint = {};    // an empty list
 
